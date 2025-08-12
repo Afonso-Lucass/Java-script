@@ -3,15 +3,19 @@ console.log('Olá mundo!');
 // Criando título
 let titulo = document.createElement('h1');
 titulo.innerText = 'Relógio Digital';
-titulo.style.color = 'white';
-titulo.style.backgroundColor = 'black';
+titulo.style.color = 'yellow';
+titulo.style.backgroundColor = 'blue';
 titulo.style.padding = '10px';
+titulo.style.textAlign = 'center';
 document.body.appendChild(titulo);
 
 // Criando elemento do relógio
 let relogio = document.createElement('h2');
 relogio.style.fontSize = '3em';
 relogio.style.color = 'blue';
+relogio.style.textAlign = 'center';
+relogio.style.backgroundColor = 'lightyellow';
+relogio.style.marginTop = '20px';
 document.body.appendChild(relogio);
 
 // Função para atualizar o relógio
@@ -26,7 +30,3 @@ function atualizarRelogio() {
 // Atualiza a cada segundo
 setInterval(atualizarRelogio, 1000);
 atualizarRelogio();
-
-
-novoElemento.style.backgroundColor = 'blue';
-novoElemento.style.color = 'yellow';
